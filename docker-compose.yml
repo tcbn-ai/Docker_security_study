@@ -1,0 +1,28 @@
+# Prerequisites: Create docker networks (global and internal), e.g.
+# docker network create attack-net-global
+# docker network create --internal attack-net-internal
+version: "3"
+services: 
+    kali:
+        build: .    # 同階層のdockerfileからビルドする
+        tty: true 
+        volumes: 
+          - ./:/root/workspace
+        environment: 
+            SHELL: /bin/bash
+        networks:
+          - global
+          - internal
+    metasploitable: 
+        image: tleemcjr/metasploitable2 
+        tty: true
+        networks:
+          - internal 
+
+networks:
+  global:
+    external:
+      name: attack-net-global 
+  internal:
+    external:
+      name: attack-net-internal

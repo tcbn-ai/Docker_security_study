@@ -1,0 +1,11 @@
+############ Requirements Packages ############
+lxml 
+scapy 
+pylint
+numpy
+scipy
+pycryptodomex
+matplotlib
+networkx
+ipykernel
+jupyter

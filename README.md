@@ -1,5 +1,5 @@
 # Virtual environment to study attack techniques
-Create environment by using docker containers to study attack techniques.
+Create the environment by using docker containers to study attack techniques.
 
 ![](https://github.com/tcbn-ai/Docker_security_study/blob/fig/fig/configuration_docker.svg?raw=true)
 
@@ -34,4 +34,5 @@ docker-compose exec metasploitable bash
 ```
 
 ## Remark
-GUI tools (e.g. Wireshark) cannot be used in this environment.
+- Current directory (the same hierarchy as `docker-compose.yml`) is mounted on `/root/workspace` in the kali container (See `docker-compose.yml`).
+- GUI tools (e.g. Wireshark) cannot be used in this environment.

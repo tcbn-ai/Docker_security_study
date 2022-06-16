@@ -4,7 +4,7 @@
 version: "3"
 services: 
     kali:
-        build: .    # 同階層のdockerfileからビルドする
+        build: .    # build from Dockerfile
         tty: true 
         volumes: 
           - ./:/root/workspace
@@ -14,7 +14,7 @@ services:
           - global
           - internal
     metasploitable: 
-        image: tleemcjr/metasploitable2 
+        image: tleemcjr/metasploitable2   # from Metasploitable2 docker image
         tty: true
         networks:
           - internal 

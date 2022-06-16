@@ -1,6 +1,12 @@
 # Virtual environment to study attack techniques
 Create environment by using docker containers to study attack techniques.
 
+![](https://github.com/tcbn-ai/Docker_security_study/blob/fig/fig/configuration_docker.svg?raw=true)
+
+The above network configuration is realized by using docker containers.
+
+![](https://github.com/tcbn-ai/Docker_security_study/blob/fig/fig/docker_env.svg?raw=true)
+
 
 
 ## Prerequisites
